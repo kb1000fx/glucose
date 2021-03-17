@@ -1,0 +1,5 @@
+{
+    "/auth/login": "/login",
+    "/auth/user": "/user",
+    "/api/notice": "/notice"
+}

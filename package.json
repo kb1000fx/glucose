@@ -1,0 +1,32 @@
+{
+  "name": "glucose",
+  "version": "0.1.0",
+  "homepage": "https://github.com/",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"nuxt\" \"npm run mock\"",
+    "mock": "json-server --watch ./mock/db.js --port 3002 --routes ./mock/router.json --middlewares ./mock/post2get.js",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1612791489.a5d8c28",
+    "@nuxtjs/axios": "^5.12.5",
+    "concurrently": "^5.3.0",
+    "core-js": "^3.8.2",
+    "faker": "^5.4.0",
+    "json-server": "^0.16.3",
+    "lodash": "^4.17.21",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3",
+    "@vue/test-utils": "^1.1.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "vue-jest": "^3.0.4"
+  }
+}
